@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: wsx
+  name: azs
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: wsx
+      app: azs
   template:
     metadata:
       labels:
-        app: wsx
+        app: azs
     spec:
       containers:
-      - image: okteto.dev/ray:latest
-        name: wsx
+      - image: okteto.dev/azs:latest
+        name: azs
         ports:
         - containerPort: 8080
         env:
