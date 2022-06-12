@@ -12,7 +12,7 @@ fi
 echo ${Vless_Path}
 
 if [[ -z "${Vless_UUID}" ]]; then
-  Vless_UUID="30080336-2156-4cc4-ba4a-a44f0fc94f2e"
+  Vless_UUID="9ac22c10-454f-4865-bf67-adc6c14196b2"
 fi
 echo ${Vless_UUID}
 
@@ -22,7 +22,7 @@ fi
 echo ${Vmess_Path}
 
 if [[ -z "${Vmess_UUID}" ]]; then
-  Vmess_UUID="30080336-2156-4cc4-ba4a-a44f0fc94f2e"
+  Vmess_UUID="9ac22c10-454f-4865-bf67-adc6c14196b2"
 fi
 echo ${Vmess_UUID}
 
