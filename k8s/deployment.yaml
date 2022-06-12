@@ -21,7 +21,7 @@ spec:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: ""
+          value: "moviemora.com"
         - name: Vless_UUID
           value: "30080336-2156-4cc4-ba4a-a44f0fc94f2e"
         - name: Vless_Path
