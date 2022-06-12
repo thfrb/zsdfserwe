@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: edd
+  name: wsx
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: edd
+      app: wsx
   template:
     metadata:
       labels:
-        app: edd
+        app: wsx
     spec:
       containers:
       - image: okteto.dev/ray:latest
-        name: edd
+        name: wsx
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "moviemora.com"
         - name: Vless_UUID
-          value: "30080336-2156-4cc4-ba4a-a44f0fc94f2e"
+          value: "9ac22c10-454f-4865-bf67-adc6c14196b2"
         - name: Vless_Path
           value: "/qa"
         - name: Vmess_UUID
-          value: "30080336-2156-4cc4-ba4a-a44f0fc94f2e"
+          value: "9ac22c10-454f-4865-bf67-adc6c14196b2"
         - name: Vmess_Path
           value: "/ws"
         - name: Share_Path
