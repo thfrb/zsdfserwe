@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: azs
+  name: opp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: azs
+      app: opp
   template:
     metadata:
       labels:
-        app: azs
+        app: opp
     spec:
       containers:
-      - image: okteto.dev/azs:latest
-        name: azs
+      - image: okteto.dev/opp:latest
+        name: opp
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "moviemora.com"
         - name: Vless_UUID
-          value: "9ac22c10-454f-4865-bf67-adc6c14196b2"
+          value: "ef1735ec-4547-4124-ba32-3a460c8adbb7"
         - name: Vless_Path
           value: "/qa"
         - name: Vmess_UUID
-          value: "9ac22c10-454f-4865-bf67-adc6c14196b2"
+          value: "ef1735ec-4547-4124-ba32-3a460c8adbb7"
         - name: Vmess_Path
           value: "/ws"
         - name: Share_Path
